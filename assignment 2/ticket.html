@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./ticket.css" type="text/css">
+  <title>Book Now</title>
+</head>
+<body>
+  <header>
+    <h1>BUY TICKETS</h1>
+    <nav class="navbar">
+      
+  <ul>
+    <li><a href="./ticket.html">Book now</a></li>
+    <li><a href="./details.html">Details</a></li>
+    <li><a href="./payment.html">Payment</a></li>
+    <li><a href="./confirmation.html">Confirmation</a></li>
+    
+</ul>
+</nav>
+  </header>
+  <div class="main-baskground ">
+ 
+   <form action="form" onsubmit="" class="form" id="form">
+    <h1>Book Now</h1>
+    <div id="date">
+      <h2>Dates</h2>
+      <div class="calender">
+        <h4>When are you comming?</h4>
+        <iframe src="https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23E4C441&ctz=Asia%2FColombo&showTitle=0&showNav=1&showDate=1&showTabs=0&showCalendars=0&showTz=0&src=c3VoYWlyYXpyYUBnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4tZ2IubGsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23E67C73&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="300" height="300" frameborder="0" scrolling="no"></iframe>
+      </div>
+     <div class="select-date">
+      <label for="date">Date</label>
+      <input type="date" id="select-date" required>
+     </div>
+      
+      
+    </div>
+    <div id="Duration">
+      <h2>Duration</h2>
+      <label for="duration">Check In</label>
+        <select id="checkin">
+          <option value="7">07.00 am </option>
+          <option value="8">08.00 am </option>
+          <option value="9">09.00 am</option>
+          <option value="10">10.00 am(peak)</option>
+          <option value="11">11.00 am(peak)</option>
+          <option value="12">12.00 pm(peak)</option>
+          <option value="13">01.00 pm</option>
+          <option value="14">02.00 pm</option>
+          <option value="15">03.00 pm(peak)</option>
+          <option value="16">04.00 pm(peak)</option>
+          <option value="17">05.00 pm(peak)</option>
+          <option value="18">06.00 pm(peak)</option>
+      
+        
+        </select>
+        <label for="duration">Check out</label>
+        <select id="checkout">
+          <option value="7">07.00 am </option>
+          <option value="8">08.00 am </option>
+          <option value="9">09.00 am</option>
+          <option value="10">10.00 am(peak)</option>
+          <option value="11">11.00 am(peak)</option>
+          <option value="12">12.00 pm(peak)</option>
+          <option value="13">01.00 pm</option>
+          <option value="14">02.00 pm</option>
+          <option value="15">03.00 pm(peak)</option>
+          <option value="16">04.00 pm(peak)</option>
+          <option value="17">05.00 pm(peak)</option>
+          <option value="18">06.00 pm(peak)</option>
+      
+        
+        </select>
+      </div>
+
+    <div id="Guests">
+      <h2>Guests</h2>
+      <div id="guest-catergories">
+        <input type="checkbox" id="sladult"name="sladult">
+        <label for="sladult">SL Adult</label>
+        <input type="checkbox" id="slchild"name="slchild">
+        <label for="slchild">SL Child</label>
+        <input type="checkbox" id="f-adult"name="f-adult">
+        <label for="f-adult">Foriegner Adult</label>
+        <input type="checkbox" id="f-child"name="f-child">
+        <label for="f-child">Foriegner Child</label>
+        <input type="checkbox" id="infant"name="infant">
+        <label for="infant">infant</label>
+      </div>
+
+      <div id="number-of-guests">
+        <h4>Number of Guests</h4>
+        <ul>
+        <div class="wrapper">
+          <li><label for="foreigner-adult">Foreigner Adult:</label></li>
+          <div class="dec-button">-</div>
+          <input type="text" name="qty" id="1" value="0" class="input-filed">
+          <div class="inc-button">+</div>
+          
+        </div>
+        
+        
+        <div class="wrapper">
+        <li><label for="foreigner-child">Foreigner Child:</label></li>  
+        <div class="dec-button">-</div>
+          <input type="text" name="qty" id="2" value="0" class="input-filed">
+          <div class="inc-button">+</div>
+        </div>
+       
+    <div class="wrapper">
+      <li><label for="sl-adult">SL Adult:</label></li>
+      <div class="dec-button">-</div>
+          <input type="text" name="qty" id="3" value="0" class="input-filed">
+          <div class="inc-button">+</div>
+    </div>
+    
+    <div class="wrapper">
+      <li><label for="sl-child">SL Child:</label>
+     </li>
+     <div class="dec-button">-</div>
+          <input type="text" name="qty" id="4" value="0" class="input-filed">
+          <div class="inc-button">+</div>
+    </div>
+  
+    <div class="wrapper">
+      <li><label for="infant">Infant:</label></li>
+      <div class="dec-button">-</div>
+          <input type="text" name="qty" id="5" value="0" class="input-filed">
+          <div class="inc-button">+</div>
+    </div>
+    
+  </ul>
+      
+      </div>
+      
+    </div>
+    
+    <button type="button" id="continue-button" onclick="Duration()">Continue with purchase</button>
+
+   </form>
+        
+<div class="summary">
+  <table id="summary-table" >
+    <h2>Summary Table</h2>
+    
+      <tr>
+        <td>Date</td>
+        <td id="dateid"> </td>
+      </tr>
+      <tr>
+        <td>Time</td>
+        <td id="selecttime"> </td>
+      </tr>
+      <tr>
+        <td>Duration</td>
+        <td id="selectduration"> </td>
+      </tr>
+      <tr class="heading">
+        <th>Tickets</th>
+        <th>Charges</th>
+        
+     
+      <tbody id="tickets-table"></tbody>
+    
+   <!-- <tfoot>
+    <tr class="total">
+      <td>Total Amount</td>
+      <td id="total-paypal">$10</td>
+    </tr>
+   </tfoot> -->
+    
+  </table>
+</div>
+
+
+
+
+
+
+</div>
+  <script src="./ticket.js"></script>
+  
+</body>
+</html>
